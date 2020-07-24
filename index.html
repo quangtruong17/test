@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cc</title>
+</head>
+<body>
+ 
+    <input id="vuong" onchange="oncclick()" type="range" max="9999" min="10">
+
+    <p id="Trần Quang Trường">day la gi tri cua input : </p>
+
+    <img style="display: block; margin: 0 auto;" src="./nguoiyeu.jpg" alt="Hello">
+
+</body>
+
+<script>
+    function oncclick() {
+        let vuong = document.getElementById("vuong");
+        const p = document.getElementById("Trần Quang Trường");
+        p.innerHTML = "day la gia tri: " + vuong.value;
+    }
+</script>
+
+</html>
